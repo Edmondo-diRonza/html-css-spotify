@@ -1,0 +1,154 @@
+/* MIX  */
+html {
+    font-family: 'Lato', sans-serif;    
+}
+a {
+    text-decoration: none;    
+}
+
+.btn_upgrade {
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;    
+}
+.btn_upgrade:hover {
+    border: 2px solid #fff;
+    padding: 12px 38px;
+}
+
+/* PAGE WRAPPER  */
+.page_wrapper {
+    height: 100vh;    
+}
+/* MAIN  */
+main {
+    display: flex;
+    height: calc(100% - 100px);
+}
+
+/* ASIDE  */
+aside {
+    width: 300px;
+    background-color: #000;
+    height: 100%;
+}
+.list_item li {
+    margin-top: 5px;
+}
+#spotify_svg {
+    width: 132px;
+    color: #fff;
+}
+
+
+/* MAIN CONTENT  */
+#main_content {
+    height: 100%;
+    width: calc(100% - 300px);
+    padding: 20px;
+    padding-top: 100px;
+    background-color: #1a1e2a;
+    overflow-y: auto;    
+}
+#upgrade {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    width: calc(100% - 300px);
+    opacity: 0.5;    
+    line-height: 80px;    
+}
+#music_menu .list_inline li a:hover {
+    border-bottom: 2px solid greenyellow;
+}
+.thumbnail_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.thumbnail_box {
+    margin-top: 20px;
+} 
+.thumbnail_box img {
+    height: 75%;
+    max-width: 280px;
+    margin-bottom: 7px;
+}
+
+
+/* FOOTER  */
+#player_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #302f30;
+    height: 100px;    
+}
+#player_section a {
+    color: #fff;    
+}
+#playing_music {    
+    min-width: 12%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+.playing_music_icons i {
+    opacity: 0.8;
+}
+.playing_music_icons i:hover {
+    opacity: 1;
+}
+
+#player_control {
+    min-width: 50%;    
+}
+#player_commands {
+    display: flex;
+    justify-content: center;    
+}
+#player_commands > a > i {
+    font-size: 25px;
+    padding: 10px;
+    margin: 0px 15px;
+    color:  #fff;
+    opacity: 0.8;
+}
+#player_commands > a > i:hover {
+    font-size: 26px;
+    opacity: 1;
+}
+.fa-play {
+    border: 3px solid #fff;
+    border-radius: 100%;    
+}
+#player_timeline {    
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+#left_time {
+    width: 15%;
+    text-align: right;
+    padding-right: 5px;
+}
+#right_time {
+    width: 15%;
+    padding-left: 5px;
+}
+
+#timeline {
+    border-bottom: 2px solid #fff;
+    width: 70%;   
+}
+#other_controls {
+    min-width: 12%;    
+}

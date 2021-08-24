@@ -1,0 +1,156 @@
+/* PAGE RESET  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* GRANDEZZA FONT BASE PER I REM  */
+html {
+    font-size: 16px;
+}
+
+/* MIX  */
+/* BUTTON  */
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+/* MENU LIST  */
+.list_item li {
+    list-style: none;
+}
+
+.list_item a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.list_inline li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.list_inline li a {
+    padding: 2px 3px;
+}
+
+
+
+
+/* FLOAT CLEARFIX  */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* FLEX TOOL  */
+.d_flex_row {
+    display: flex;
+}
+
+.d_flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TEXT ALIGNMENT  */
+.text_center {
+    text-align: center;
+}
+.text_right {
+    text-align: right;
+}
+.text_left {
+    text-align: left;
+}
+
+/* PADDING TOP  */
+
+.p_top_10 {
+    padding-top: 10px;
+}
+.p_top_20 {
+    padding-top: 20px;
+}
+.p_top_30 {
+    padding-top: 30px;
+}
+.p_top_40 {
+    padding-top: 40px;
+}
+.p_top_50 {
+    padding-top: 50px;
+}
+
+/* PADDING BOTTOM  */
+
+.p_bottom_10 {
+    padding-bottom: 10px;
+}
+.p_bottom_20 {
+    padding-bottom: 20px;
+}
+.p_bottom_30 {
+    padding-bottom: 30px;
+}
+.p_bottom_40 {
+    padding-bottom: 40px;
+}
+.p_bottom_50 {
+    padding-bottom: 50px;
+}
+
+/* PADDING LEFT  */
+.p_left_10 {
+    padding-left: 10px;
+}
+.p_left_20 {
+    padding-left: 20px;
+}
+.p_left_30 {
+    padding-left: 30px;
+}
+.p_left_40 {
+    padding-left: 40px;
+}
+.p_left_50 {
+    padding-left: 50px;
+}
+
+/* PADDING RIGHT  */
+.p_right_10 {
+    padding-right: 10px;
+}
+.p_right_20 {
+    padding-right: 20px;
+}
+.p_right_30 {
+    padding-right: 30px;
+}
+.p_right_40 {
+    padding-right: 40px;
+}
+.p_right_50 {
+    padding-right: 50px;
+}
+
+/* BACKGROUND COLOR  */
+.bg_white {
+    background-color: #fff;
+}
+.bg_black {
+    background-color: #000;
+}
+.bg_grey {
+    background-color: grey;
+}
+
+/* TEXT COLOR  */
+.text_white {
+    color: #fff;
+}
+
+
+
+
