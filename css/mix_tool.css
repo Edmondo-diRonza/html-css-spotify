@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* GRANDEZZA FONT BASE PER I REM  */
 html {
     font-size: 16px;
@@ -16,11 +17,11 @@ html {
     padding: 10px 20px;
     border: 1px solid #000;
 }
+
 /* MENU LIST  */
 .list_item li {
     list-style: none;
 }
-
 .list_item a {
     text-decoration: none;
     text-transform: uppercase;
@@ -32,9 +33,6 @@ html {
 .list_inline li a {
     padding: 2px 3px;
 }
-
-
-
 
 /* FLOAT CLEARFIX  */
 .clearfix::after {
@@ -52,7 +50,6 @@ html {
     display: flex;
     flex-direction: column;
 }
-
 
 /* TEXT ALIGNMENT  */
 .text_center {
@@ -150,7 +147,3 @@ html {
 .text_white {
     color: #fff;
 }
-
-
-
-
