@@ -23,8 +23,7 @@ html {
     list-style: none;
 }
 .list_item a {
-    text-decoration: none;
-    text-transform: uppercase;
+    text-decoration: none;    
 }
 .list_inline li {
     display: inline-block;
@@ -60,6 +59,13 @@ html {
 }
 .text_left {
     text-align: left;
+}
+/* TEXT STYLE  */
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
 }
 
 /* PADDING TOP  */

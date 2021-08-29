@@ -15,7 +15,7 @@
     <body>
         <div class="page_wrapper">
             <main>                
-                <aside>
+                <aside id="main_menu" class="text_white">
                     <div id="logo" class="p_top_30 p_left_20">
                         <svg viewBox="0 0 1134 340" id="spotify_svg">
                             <title>Spotify</title>
@@ -25,24 +25,36 @@
                     </div>
                     <nav id="main_nav">
                         <ul class="list_item p_left_20 p_top_20" >
-                            <li><a href="#" class="text_white"><i class="fas fa-home p_right_10"></i>Home</a></li>
-                            <li><a href="#" class="text_white"><i class="fas fa-home p_right_10"></i>Home</a></li>
-
+                            <li><a href="#"><i class="fas fa-home p_right_10"></i>Home</a></li>
+                            <li><a href="#"><i class="fas fa-search p_right_10"></i>Cerca</a></li>
+                            <li><a href="#"><i class="fas fa-swatchbook p_right_10"></i>La tua Libreria</a></li>
                         </ul>
+                    </nav>
+                    <nav id="playlist_nav">
+                        <h4 class="p_left_20 p_top_30">PLAYLIST</h4>
+                        <ul class="list_item p_left_20 p_left_20">
+                            <li><a href="#"><i class="fas fa-plus"></i>Crea Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+
                     </nav>
                 </aside>
                 <section id="main_content" class="text_white">
                     <div id="upgrade" class="bg_black text_right p_right_30"><a class="btn btn_upgrade" href="#"> Effettua l'Upgrade</a></div>
-                    <div id="music_menu" class="text_center">
+                    <nav id="music_menu" class="text_center uppercase">
                         <ul class="list_item list_inline">
-                            <li><a class="text_white" href="#">In EVidenza</a></li>
+                            <li><a class="text_white" href="#">In Evidenza</a></li>
                             <li><a class="text_white" href="#">Podcast</a></li>
                             <li><a class="text_white" href="#">Classifiche</a></li>
                             <li><a class="text_white" href="#">Generi e Mood</a></li>
                             <li><a class="text_white" href="#">Nuove Uscite</a></li>
                             <li><a class="text_white" href="#">Scopri</a></li>
                         </ul>
-                    </div>
+                    </nav>
                     <div id="recently_played" class="p_top_10">
                         <h2>Recently Played</h2>
                         <div class="thumbnail_container">
@@ -130,14 +142,6 @@
                                     <h6>Subtitle</h6>
                                 </div>                                
                             </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                         </div>
                     </div>
                 </section>

@@ -33,7 +33,9 @@ main {
 }
 
 /* ASIDE  */
-aside {
+#main_menu {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     background-color: #000;
     height: 100%;
@@ -45,6 +47,20 @@ aside {
     width: 132px;
     color: #fff;
 }
+#main_nav li a {
+    border-left: 3px solid transparent;
+    padding-left: 2px;
+}
+#main_nav li a:active{
+    border-left: 3px solid yellowgreen;
+}
+
+#playlist_nav .fa-plus {
+    background-color: grey;    
+    color: #000;
+    margin-right: 5px;   
+}
+
 
 
 /* MAIN CONTENT  */
@@ -66,7 +82,7 @@ aside {
     opacity: 0.5;    
     line-height: 80px;    
 }
-#music_menu .list_inline li a:hover {
+#music_menu .list_inline li a:active {
     border-bottom: 2px solid greenyellow;
 }
 .thumbnail_container {
@@ -143,7 +159,8 @@ aside {
 }
 #player_commands {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    align-items: center;    
 }
 #player_commands > a > i {
     font-size: 25px;
