@@ -36,9 +36,10 @@ main {
 #main_menu {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     width: 300px;
     background-color: #000;
-    height: 100%;
+    height: 100%;       
 }
 .list_item li {
     margin-top: 5px;
@@ -54,14 +55,33 @@ main {
 #main_nav li a:active{
     border-left: 3px solid yellowgreen;
 }
-
+#playlist_nav { 
+    overflow: hidden;    
+    height: 100%;        
+}
+#playlist_nav .list_item li {
+    padding-bottom: 10px;
+}
+#playlist_nav .list_item li a {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+}
+#playlist_nav .list_item li:hover a {
+    color:#fff;
+}
 #playlist_nav .fa-plus {
     background-color: grey;    
     color: #000;
     margin-right: 5px;   
 }
-
-
+#playlist_nav .list_item {
+    overflow-y: auto;
+    height: 80%;        
+}
+#aside_bottom {
+    height: 80px;
+    margin-top: auto;
+}
 
 /* MAIN CONTENT  */
 #main_content {
@@ -94,19 +114,14 @@ main {
 .thumbnail_box {
     position: relative;
     max-width: 280px;
-    padding: 10px 0;
-    
-    /* flex-shrink: 1; */
+    padding: 10px 0;    
 } 
-
 .thumbnail_box .image_thumbnail_container img {
     height: 100%;
     width: 100%;
     max-width: 280px;
     margin-bottom: 7px;
 }
-
-
 .hovering_overlay {
     display: none;
     background-color: #000;
@@ -137,7 +152,9 @@ main {
     justify-content: space-between;
     align-items: center;
     background-color: #302f30;
-    height: 100px;    
+    height: 100px;
+    position: relative;
+    z-index: 1;    
 }
 #player_section a {
     color: #fff;    
@@ -191,7 +208,6 @@ main {
     width: 15%;
     padding-left: 5px;
 }
-
 #timeline {
     border-bottom: 2px solid #fff;
     width: 70%;   
