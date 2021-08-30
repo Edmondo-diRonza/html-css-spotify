@@ -30,7 +30,7 @@
                             <li><a href="#"><i class="fas fa-swatchbook p_right_10"></i>La tua Libreria</a></li>
                         </ul>
                     </nav>
-                    <nav id="playlist_nav">
+                    <nav id="playlist_nav" class="p_left_10">
                         <h4 class="p_top_30 p_bottom_10">PLAYLIST</h4>
                         <ul class="list_item">
                             <li><a href="#"><i class="fas fa-plus"></i>Crea Playlist</a></li>
@@ -62,9 +62,23 @@
                             <li><a class="text_white" href="#">Scopri</a></li>
                         </ul>
                     </nav>
-                    <div id="recently_played" class="p_top_10">
-                        <h2>Recently Played</h2>
+                    <div id="recently_played" class="p_top_10 ">
+                        <h2 class="p_top_10 p_bottom_10">Recently Played</h2>
                         <div class="thumbnail_container">
+                            <div class="thumbnail_box text_center">
+                                <div class="image_thumbnail_container">
+                                    <img src="img/box_image.jpeg" alt="Box Image">
+                                    <div class="hovering_overlay">
+                                        <a href="#">
+                                            <i class="fas fa-play" id="thumbnail_play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="thumbnail_title">                                
+                                    <h3>Heavy Metal</h3>
+                                    <h6>Subtitle</h6>
+                                </div>                                
+                            </div>
                             <div class="thumbnail_box text_center">
                                 <div class="image_thumbnail_container">
                                     <img src="img/box_image.jpeg" alt="Box Image">
@@ -155,7 +169,9 @@
             </main>
             <footer id="player_section" class="text_white">
                 <div id="playing_music">
-                    <a href="#"><img src="img/miniatura.jpeg" alt="miniatura"></a>
+                    <div id="song_icon">
+                        <a href="#"><img src="img/miniatura.jpeg" alt="miniatura"></a>
+                    </div> 
                     <div id="song_name">
                         <h5>Dynamite</h5>
                         <h6>BTS</h6>
@@ -176,17 +192,30 @@
                         <a href="#"><i class="fas fa-redo"></i></a>
                     </div>
                     <div id="player_timeline">
-                        <div id="left_time">
+                        <div id="left_time" class="text_right">
                             <p>0:25</p>
                         </div>
-                        <div id="timeline"></div>
-                        <div id="right_time">
+                        <div id="timeline">
+                            <div id="elapsed_time"></div>
+                            <span id="player_ball"></span>
+                        </div>
+                        <div id="right_time" class="text_left">
                             <p>4:35</p>
                         </div>
 
                     </div>
                 </div>
-                <div id="other_controls">prova</div>
+                <div id="other_controls" class="p_right_10">
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <div id="timeline">
+                        <div id="elapsed_time"></div>
+                        <span id="player_ball"></span>
+                    </div>
+
+
+                </div>
 
                 
             </footer>
